@@ -13,55 +13,55 @@
     display: grid;
     grid-template-rows: 33% 33% 33%;
     align-items: center;
-}
 
-.clock-content.small {
-    width: 100px;
-    height: 100px;
+    &.small {
+        width: 100px;
+        height: 100px;
 
-    .clock-face {
-        font-size: 1em;
+        & .clock-face {
+            font-size: 1em;
+        }
+
+        & .clock-date {
+            font-size: 0.35em;
+        }
+
+        & .clock-format {
+            font-size: 0.5em;
+        }
     }
 
-    .clock-date {
-        font-size: 0.35em;
+    &.regular {
+        width: 150px;
+        height: 150px;
+
+        & .clock-face {
+            font-size: 1.5em;
+        }
+    
+        & .clock-date {
+            font-size: 0.65em;
+        }
+    
+        & .clock-format {
+            font-size: 0.75em;
+        }
     }
 
-    .clock-format {
-        font-size: 0.5em;
-    }
-}
+    &.large {
+        width: 200px;
+        height: 200px;
 
-.clock-content.regular {
-    width: 150px;
-    height: 150px;
+        & .clock-date {
+            font-size: 0.8em;
+        }
 
-    .clock-face {
-        font-size: 1.5em;
-    }
+        & .clock-format {
+            font-size: 1em;
+        }
 
-    .clock-date {
-        font-size: 0.65em;
-    }
-
-    .clock-format {
-        font-size: 0.75em;
-    }
-}
-
-.clock-content.large {
-    width: 200px;
-    height: 200px;
-
-    .clock-date {
-        font-size: 0.8em;
-    }
-
-    .clock-format {
-        font-size: 1em;
-    }
-
-    .clock-face {
-        font-size: 2em;
+        & .clock-face {
+            font-size: 2em;
+        }
     }
 }
