@@ -1,13 +1,13 @@
 {
   "name": "react-time-components",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
     "build": "webpack --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "fab4u-4empion",
   "license": "ISC",
   "devDependencies": {
     "@types/react": "^18.0.15",

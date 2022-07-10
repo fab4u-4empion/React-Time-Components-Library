@@ -1,11 +1,11 @@
 import React, { FC, useEffect, useState } from "react";
 import './styles/index.scss'
-import { ClockProps } from "./interfaces/clockPropsInterface";
+import { ClockProps } from "./types/clockPropsInterface";
 import { use2Digit } from "./hooks/2Digit";
 import { useWeekDay } from "./hooks/WeekDay";
 import { useLocaleDate } from "./hooks/LocaleDate";
 
-export const Clock: FC<ClockProps> = ({size}) => {
+export const Clock: FC<ClockProps> = ({size = "regular", locale = "ru"}) => {
 
     const [currentDate, setCurrentDate] = useState<Date>(new Date(Date.now()))
 
@@ -24,9 +24,9 @@ export const Clock: FC<ClockProps> = ({size}) => {
     const minutes: string = use2Digit(currentDate.getMinutes())
     const seconds: string = use2Digit(currentDate.getSeconds())
 
-    const dayOfWeek: string = useWeekDay(currentDate.getDay())
+    const dayOfWeek: string = useWeekDay(currentDate.getDay(), locale)
 
-    const localeDate = useLocaleDate(currentDate)
+    const localeDate: string = useLocaleDate(currentDate, locale)
 
     const clockContentClasses: string[] = ["clock-content"]
     clockContentClasses.push(size)
