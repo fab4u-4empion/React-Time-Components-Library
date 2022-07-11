@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "fab4u-4empion",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
