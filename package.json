@@ -1,8 +1,9 @@
 {
   "name": "react-time-components",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
+  "repository": "https://github.com/fab4u-4empion/React-Time-Components-Library",
   "scripts": {
     "build": "webpack --watch"
   },
