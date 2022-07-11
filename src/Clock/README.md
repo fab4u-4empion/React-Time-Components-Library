@@ -20,5 +20,5 @@ const App = () => {
 
 | Prop name     | Type                                  | Default       | Description  |
 | ------------- |  ----------------------------         | ------------  | -----------  |
-| size?         | `"small"` \| `"regular"` \| `"large"` | `"regular"`   | "small" - 100x100`px` <br/> "regular" - 150x150`px` <br/> "large" - 200x200`px`|
-| lacale?       | `"ru"` \| `"en"`                      | `"ru"`        |              |
+| size?         | `"small"` \| `"regular"` \| `"large"` | `"regular"`   | `"small"` - 100x100`px` <br/> `"regular"` - 150x150`px` <br/> `"large"` - 200x200`px`|
+| locale?       | `"ru"` \| `"en"`                      | `"ru"`        |              |
