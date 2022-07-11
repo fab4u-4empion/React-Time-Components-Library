@@ -5,7 +5,11 @@ import { use2Digit } from "./hooks/2Digit";
 import { useWeekDay } from "./hooks/WeekDay";
 import { useLocaleDate } from "./hooks/LocaleDate";
 
-export const Clock: FC<ClockProps> = ({size = "regular", locale = "ru"}) => {
+export const Clock: FC<ClockProps> = ({
+                                        size = "regular", 
+                                        locale = "ru",
+                                        className = ""
+                                    }) => {
 
     const [currentDate, setCurrentDate] = useState<Date>(new Date(Date.now()))
 
@@ -31,8 +35,11 @@ export const Clock: FC<ClockProps> = ({size = "regular", locale = "ru"}) => {
     const clockContentClasses: string[] = ["clock-content"]
     clockContentClasses.push(size)
 
+    const clockWrapperClasses: string[] = ["clock-wrapper"]
+    clockWrapperClasses.push(className)
+
     return (
-        <div className="clock-wrapper">
+        <div className={clockWrapperClasses.join(" ")}>
             <div className={clockContentClasses.join(" ")}>
                 <div className="clock-date">
                     <div>

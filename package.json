@@ -5,7 +5,7 @@
   "main": "./dist/index.js",
   "repository": "https://github.com/fab4u-4empion/React-Time-Components-Library",
   "scripts": {
-    "build": "webpack --watch"
+    "build": "webpack"
   },
   "keywords": [],
   "author": "fab4u-4empion",
